@@ -21,7 +21,11 @@
       <dd><%= @movie.image_url %></dd>
 
       <dt>Director</dt>
+<<<<<<< HEAD
       <dd><%= @movie.director_id %></dd>
+=======
+      <dd><%= Director.find_by(:id => @movie.director_id).name %></dd>
+>>>>>>> parent of 409e0c3... Adds many-to-many
 
     </dl>
 
